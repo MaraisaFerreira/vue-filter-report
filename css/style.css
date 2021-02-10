@@ -1,0 +1,38 @@
+:root {
+	/* Cores */
+	--header-bg-color: rgba(0, 0, 0, 0.69);
+
+	/* measures */
+	--logo-width: 350px;
+	--header-height: 50px;
+}
+
+header.header {
+	display: grid;
+	grid-template-columns: var(--logo-width) 1fr;
+	grid-template-rows: var(--header-height);
+	grid-template-areas: 'logo menu';
+	background-color: var(--header-bg-color);
+}
+
+div.container {
+	margin-top: calc(var(--header-height) + 40px);
+}
+
+div.logo {
+	grid-area: 'logo';
+	overflow: hidden;
+}
+
+div.logo img {
+	width: 90%;
+	padding: 10px;
+}
+
+nav.nav-itens {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	grid-area: 'menu';
+}
