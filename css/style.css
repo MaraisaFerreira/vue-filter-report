@@ -1,8 +1,6 @@
 :root {
-	/* Cores */
 	--header-bg-color: rgba(0, 0, 0, 0.69);
 
-	/* measures */
 	--logo-width: 350px;
 	--header-height: 50px;
 }
